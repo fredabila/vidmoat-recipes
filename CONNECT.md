@@ -1,12 +1,24 @@
-# Connect Vidmoat MCP
+# Connect Vidmoat
+
+Chat first. MCP is optional and uses the same reviewable timeline.
+
+## Telegram
+
+Open [@VidmoatBot](https://t.me/VidmoatBot). Send a clip. Caption it with the edit you want.
+
+Examples: `cut the silence and add captions` · `cut the ums and dead air`
+
+You get a real timeline edit back. If a cut is wrong, open the same project at [vidmoat.com](https://vidmoat.com) and restore the beat. Recipe: [telegram-chat-edit](./recipes/telegram-chat-edit.md).
+
+## MCP
 
 Endpoint: `https://api.vidmoat.com/api/mcp`  
 Transport: Streamable HTTP  
 Keys: Account → API keys (`vmk_test_…` or `vmk_live_…`)
 
-Test keys: any plan, including Hobby. Live keys: **Studio**.
+Test keys: any plan, including Hobby. Live / production MCP is Studio ($49/mo).
 
-## Claude Code
+### Claude Code
 
 ```bash
 claude mcp add --transport http vidmoat api.vidmoat.com/api/mcp
@@ -14,7 +26,7 @@ claude mcp add --transport http vidmoat api.vidmoat.com/api/mcp
 
 When prompted, add header `Authorization: Bearer YOUR_KEY`.
 
-## Claude Desktop
+### Claude Desktop
 
 `claude_desktop_config.json`:
 
@@ -31,7 +43,7 @@ When prompted, add header `Authorization: Bearer YOUR_KEY`.
 }
 ```
 
-## Cursor
+### Cursor
 
 Settings → MCP → add a Streamable HTTP server:
 
@@ -39,7 +51,7 @@ Settings → MCP → add a Streamable HTTP server:
 - URL: `https://api.vidmoat.com/api/mcp`
 - Header: `Authorization` = `Bearer YOUR_VIDMOAT_API_KEY`
 
-## Smoke test
+### Smoke test
 
 Ask the agent:
 
@@ -47,6 +59,6 @@ Ask the agent:
 
 If that returns projects, you are connected. If it asks you to upgrade, you are on a test key trying a live-only call. Stay on test until you actually need to render for real, then use Studio.
 
-## After every edit
+### After every edit
 
 > Preview the current timeline as images at 0:03, 0:12, and the last 2 seconds. Fix any caption covering a face or sitting off-canvas. Then render 1080p and give me the URL.

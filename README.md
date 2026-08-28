@@ -6,6 +6,8 @@ This is **not** "the only MCP video editor." Palmier Pro already drives a real l
 
 ## Connect
 
+Chat first: send a clip to [@VidmoatBot](https://t.me/VidmoatBot). MCP below if you want an agent driving the same timeline.
+
 ```bash
 claude mcp add --transport http vidmoat api.vidmoat.com/api/mcp
 ```
@@ -33,6 +35,8 @@ Full client configs: [CONNECT.md](./CONNECT.md). Product docs: [developer.vidmoa
 | [green-screen-coach](./recipes/green-screen-coach.md) | Key + logo brush + four platforms |
 | [product-demo](./recipes/product-demo.md) | Screen + talk track → changelog video |
 | [check-frames-then-render](./recipes/check-frames-then-render.md) | Preview frames as images, then export |
+| [telegram-chat-edit](./recipes/telegram-chat-edit.md) | Send a clip in Telegram, get a real edit back |
+| [captions-without-nle](./recipes/captions-without-nle.md) | Burned-in karaoke captions without opening Premiere |
 
 Every recipe ends with: **preview frames, then render.** An agent that cannot see the frame will put text on a face.
 
