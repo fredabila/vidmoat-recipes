@@ -2,10 +2,10 @@
 
 **Job:** send a clip in Telegram, get a real edit back. Open the same timeline in the browser if a cut is wrong.
 
-This is chat, not MCP. Open [@VidmoatBot](https://t.me/VidmoatBot).
+This is chat, not MCP. Open [@vidmoat_bot](https://t.me/vidmoat_bot).
 
 ```
-Send the clip to @VidmoatBot with a caption:
+Send the clip to @vidmoat_bot with a caption:
 
 cut the silence and add captions
 ```

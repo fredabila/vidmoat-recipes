@@ -1,14 +1,20 @@
 # Connect Vidmoat
 
-Chat first. MCP is optional and uses the same reviewable timeline.
+Hosted editor first. Chat second. MCP is optional and uses the same reviewable timeline.
+
+## Browser
+
+Open https://www.vidmoat.com — dump footage, type the edit, inspect the timeline, render.
 
 ## Telegram
 
-Open [@VidmoatBot](https://t.me/VidmoatBot). Send a clip. Caption it with the edit you want.
+Open [@vidmoat_bot](https://t.me/vidmoat_bot) (underscore only). Send a clip. Caption it with the edit you want.
 
 Examples: `cut the silence and add captions` · `cut the ums and dead air`
 
-You get a real timeline edit back. If a cut is wrong, open the same project at [vidmoat.com](https://vidmoat.com) and restore the beat. Recipe: [telegram-chat-edit](./recipes/telegram-chat-edit.md).
+You get a real timeline edit back. If a cut is wrong, open the same project at [vidmoat.com](https://www.vidmoat.com) and restore the beat. Recipe: [telegram-chat-edit](./recipes/telegram-chat-edit.md).
+
+`@VidmoatBot` without the underscore is **not** Vidmoat.
 
 ## MCP
 
@@ -16,7 +22,7 @@ Endpoint: `https://api.vidmoat.com/api/mcp`
 Transport: Streamable HTTP  
 Keys: Account → API keys (`vmk_test_…` or `vmk_live_…`)
 
-Test keys: any plan, including Hobby. Live / production MCP is Studio ($49/mo).
+Test keys: any plan, including Hobby. Live / production MCP is Studio ($49/mo). Creator does not include live MCP. MCP is one client of the product, not the product.
 
 ### Claude Code
 

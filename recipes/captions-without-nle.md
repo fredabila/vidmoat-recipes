@@ -2,7 +2,7 @@
 
 **Job:** burned-in / karaoke captions without opening Premiere.
 
-Use the hosted editor at [vidmoat.com](https://vidmoat.com), or send the clip to [@VidmoatBot](https://t.me/VidmoatBot).
+Use the hosted editor at [vidmoat.com](https://vidmoat.com), or send the clip to [@vidmoat_bot](https://t.me/vidmoat_bot).
 
 ```
 Transcribe with word-level timings.
