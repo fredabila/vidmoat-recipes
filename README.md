@@ -1,12 +1,16 @@
 # Vidmoat recipes
 
-Copy-paste prompts and MCP setup for [Vidmoat](https://vidmoat.com), a hosted video editor an agent can see and a human can still open.
+Copy-paste prompts for [Vidmoat](https://www.vidmoat.com) — a **hosted AI video editor** with a real, reviewable timeline.
 
-This is **not** "the only MCP video editor." Palmier Pro already drives a real local Mac timeline. OpusClip already ships a hosted clipper MCP. Rendley sells MCP editing. Vidmoat's lane is **hosted + cross-platform + reviewable timeline + chat** (`@VidmoatBot` on Telegram).
+Start in the browser at [vidmoat.com](https://www.vidmoat.com), or text a clip to [@vidmoat_bot](https://t.me/vidmoat_bot) on Telegram. Same product, same projects, same credits. MCP is **one client** (Claude Code, Cursor, etc.) that can drive that same timeline — not the product itself.
 
-## Connect
+This is **not** "the only MCP video editor." Palmier Pro already drives a real local Mac timeline. OpusClip already ships a hosted clipper MCP. Rendley sells MCP editing. Vidmoat's lane is **hosted + cross-platform + reviewable timeline + chat**.
 
-Chat first: send a clip to [@VidmoatBot](https://t.me/VidmoatBot). MCP below if you want an agent driving the same timeline.
+## Ways in (hosted first)
+
+1. **Browser editor** — https://www.vidmoat.com  
+2. **Telegram** — [@vidmoat_bot](https://t.me/vidmoat_bot) (underscore only; `@VidmoatBot` is not us)  
+3. **MCP** (optional) — same timeline, Studio for live/production; test keys on any plan  
 
 ```bash
 claude mcp add --transport http vidmoat api.vidmoat.com/api/mcp
@@ -17,6 +21,7 @@ Then paste an API key from Account → API keys.
 - **Test keys** work on any plan, including Hobby ($0).
 - **Live / production MCP** is Studio ($49/mo). Creator ($19/mo) does not include live MCP.
 - Manual edits do not spend credits.
+- Do **not** print Hobby credit numbers here — use `/pricing` as source of truth.
 
 Cursor: add the same URL (`https://api.vidmoat.com/api/mcp`) as a Streamable HTTP server, Authorization `Bearer vmk_…`.
 
@@ -38,15 +43,17 @@ Full client configs: [CONNECT.md](./CONNECT.md). Product docs: [developer.vidmoa
 | [telegram-chat-edit](./recipes/telegram-chat-edit.md) | Send a clip in Telegram, get a real edit back |
 | [captions-without-nle](./recipes/captions-without-nle.md) | Burned-in karaoke captions without opening Premiere |
 
-Every recipe ends with: **preview frames, then render.** An agent that cannot see the frame will put text on a face.
+Every recipe ends with: **preview frames, then render.** An agent that cannot see the frame will put text on a face. The editor exposes **65+ timeline commands** — say that; do not print an MCP tool count (public pages disagree).
 
 ## Copy freeze
 
 When you fork or quote this repo:
 
-- Say **65+ timeline commands**. Do not print an MCP tool count (public pages disagree).
+- Lead with the **hosted editor** (vidmoat.com), then Telegram `@vidmoat_bot`, then MCP as optional.
+- Say **65+ timeline commands**. Do not print an MCP tool count.
 - Do not print Hobby credit numbers until `/pricing` and the docs agree.
 - Do not say "only MCP video editor."
+- Never write `@VidmoatBot` (no underscore) — that is a different account.
 - Discord is a small room, not a community.
 - [Agent2Creator](https://agent2creator.vidmoat.com) is a gallery of Vidmoat renders, not a second product.
 
